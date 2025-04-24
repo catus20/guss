@@ -289,3 +289,9 @@ form button:hover {
     color: white;
     border-radius: 5px; /* Økt verdi for rundere kanter */
 }
+
+#gibberish {
+    background-color: #1a1a1a;
+    color: white;
+    border-radius: 5px; /* Økt verdi for rundere kanter */
+}
