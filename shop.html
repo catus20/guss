@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guss_690 - Link in Bio</title>
+    <link rel="icon" type="image/png" href="images/image.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    
+</head>
+<body>
+    <a href="index.html" class="knappa"> ← Tilbake til forsida</a>
+    <div class="fullscreen-popup" id="popup">
+        <div class="popup-content">
+          <button class="close-btn" onclick="document.getElementById('popup').style.display='none'">&times;</button>
+          <p>Kom gjerne med tips til meir merch eg kan laga via spørsmål/tips knappen!</p>
+        </div>
+      </div>
+      
+    
+    <img src="images/riktigfarge.png" id="bilete">
+    <p class="p"> Klistremerka kostar 3kr per stykk.</p>
+    <p class="p"> Eg sendar ikkje klistremerke i posten, dei må hentas på Stord eller ved unntak levering.</p>
+    <div class="q-and-a" id="kjopsvilkar">
+        <p>⚠️ Klistremerket tåler ikkje mykje bruk eller slitasje ⚠️<br>
+            <br>
+
+            Dette klistremerket passar best på ting som ikkje blir utsette for mykje dagleg bruk, som til dømes ting som ligg på hylla eller bordet. <br>
+            Det passar ikkje på mobilen om du brukar den ofte, sidan fargen kan forsvinne etter mykje bruk.<br> Merket symboliserer starten på mi reise som innhaldsprodusent, med datoen på øyret som eit minne. Hald det tørt og unna for mykje slitasje, så varer det best!
+            <br> <br>
+            Eg kan sende deg eit vippskrav, om ikkje den vert betalt så får ein ikkje klistremerka.
+            <br> Lenke til vipps: <a href="https://qr.vipps.no/box/9f01fef4-6671-40ce-a40d-07c050ef2b65/pay-in" class="knappa">Vipps</a>
+    </div>
+
+    <button class="button" id="Button">Bestill</button>
+    <div class="merchinput" id="merchForm" style="display: none;">
+        <form
+            action="https://formspree.io/f/movdqoer"
+            method="POST"
+            enctype="multipart/form-data"
+        >
+            <label>
+                <i class="fas fa-pen"></i> Heile namnet ditt:
+                <input type="text" name="fullName" required pattern="(\b\w+\b.*){2,}" title="Skriv minst to ord." required>
+            </label>
+            <label>
+                <i class="fas fa-envelope"></i> Din e-post
+                <input type="email" name="email" required>
+            </label>
+            <label>
+                <i class="fas fa-phone"></i> Telefonnummer:
+                <input type="tel" name="phone" required pattern="[0-9]{8,}" title="Skriv eit gyldig telefonnummer med minst 8 siffer." required>
+            </label>
+            <label>
+                <i class="fas fa-pen"></i> Antal klistremerker:
+                <textarea name="antal" rows="1" required></textarea>
+            </label>
+            <label>
+                <i class="fas fa-money-bill-wave"></i> Velg betalingsmetode:
+                <select name="paymentMethod" required class="dropdown">
+                    <option value="" disabled selected>Velg ein metode</option>
+                    <option value="harVippsa">Har vippsa</option>
+                    <option value="ynskjerVippskrav">Ynskjer vippskrav</option>
+                </select>
+            </label>
+            <button type="submit">
+                <i class="fas fa-paper-plane"></i> Bestill
+            </button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('Button').addEventListener('click', function() {
+            const merchForm = document.getElementById('merchForm');
+            merchForm.style.display = merchForm.style.display === 'none' ? 'block' : 'none';
+        });
+    </script>
+
+
+
+</body>

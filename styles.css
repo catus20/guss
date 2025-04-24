@@ -139,6 +139,153 @@ footer {
 }
 
 #paypal {
-    background-color:	#00457C;
+    background-color: #00457C;
     color: #ffffff;
+}
+
+form {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    color: #ffaaaa;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+form label i {
+    margin-right: 8px;
+    color: #ffaaaa;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: white;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+form input[type="file"] {
+    padding: 0;
+}
+
+form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 12px;
+    background-color: #ffaaaa;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+form button i {
+    margin-right: 6px;
+}
+
+form button:hover {
+    background-color: #ff5c5c;
+    transform: scale(1.05);
+}
+
+#kjopsvilkar {
+    max-width: 45rem;
+    text-align: center;
+}
+
+.fullscreen-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(6px);
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.popup-content {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    position: relative;
+    max-width: 90%;
+    width: 400px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-size: 1.1rem;
+    border: 2px solid #ffaaaa;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #ffaaaa;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.close-btn:hover {
+    color: #ff5c5c;
+}
+
+#bilete  {
+    max-width: 50rem;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 2%;
+}
+
+.knappa {
+    color: #ffaaaa; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.knappa:hover {
+    color: #ff5c5c; 
+}
+
+.p {
+    margin-bottom: 2%;
+}
+
+@media (max-width: 600px) {
+    #bilete {
+        width: 100%;
+    }
+}
+
+.dropdown {
+    background-color: #1a1a1a;
+    color: white;
+    border-radius: 5px; /* Økt verdi for rundere kanter */
 }
