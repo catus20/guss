@@ -295,3 +295,28 @@ form button:hover {
     color: white;
     border-radius: 5px; /* Økt verdi for rundere kanter */
 }
+
+video {
+    display: block;
+    margin: 20px auto;
+    width: 300px; /* Fast breidde */
+    max-width: 90%; /* På små skjermar */
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
